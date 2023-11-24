@@ -1,0 +1,63 @@
+body{
+    background-color: rgb(40, 40, 40);
+}
+
+p{
+    color: aliceblue;
+    text-align: justify;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+h1{
+    color: rgb(255, 45, 45);
+}
+
+h5{
+    color: aliceblue;
+}
+
+h6{
+    color: aliceblue;
+}
+
+b{
+    color: rgb(224, 14, 14);
+}
+
+.griglia-pulsanti{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-self: center;
+    margin: auto;
+    width: 50%;
+
+}
+
+.pulsante-donna{
+    background-color: rgb(87, 0, 0);
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    animation-timing-function: ease-in-out;
+    margin: auto;
+    align-self: center;
+}
+
+.immagine-donna{
+    margin: 15px;
+    border-radius: 20px;
+}
+
+.immagine-donna:hover{
+    box-shadow: 0 0 10px #000000;
+}
+
+.pulsante-donna:hover{
+    background-color: red;
+}
+
+.titolo-donna{
+    align-self: center;
+}

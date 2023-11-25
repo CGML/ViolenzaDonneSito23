@@ -41,26 +41,28 @@ b{
 }
 
 .pulsante-donna{
-    background-color: rgb(87, 0, 0);
+    background-color: rgb(53, 0, 0);
     display: flex;
     flex-direction: column;
     border-radius: 25px;
     animation-timing-function: ease-in-out;
     margin: auto;
     align-self: center;
+    transition: 0.5s;
 }
 
 .immagine-donna{
     margin: 15px;
     border-radius: 20px;
-}
-
-.immagine-donna:hover{
-    box-shadow: 0 0 10px #000000;
+    transition: 0.5s;
 }
 
 .pulsante-donna:hover{
     background-color: red;
+}
+
+.pulsante-donna:hover .immagine-donna{
+    box-shadow: 0 0 20px rgb(0, 0, 0);
 }
 
 .titolo-donna{

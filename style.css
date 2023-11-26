@@ -3,10 +3,12 @@ body{
     background: linear-gradient(0deg, rgba(43,0,0,1) 0%, rgba(0,0,0,1) 35%, rgba(19,19,19,1) 100%);
     height: 100%;
     width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 p{
-    font-size: large;
+    font-size: x-large;
     color: aliceblue;
     text-align: center;
     padding-left: 10%;
@@ -15,8 +17,11 @@ p{
 }
 
 h1{
+    font-family: 'Vina Sans', sans-serif;
+    letter-spacing: 10px;
+    font-size: 100px;
+    text-align: center;
     color: rgb(255, 45, 45);
-    font-family: vina;
 }
 
 h5{
@@ -36,8 +41,8 @@ b{
     flex-direction: row;
     align-self: center;
     margin: auto;
-    width: 40%;
     padding-bottom: 12%;
+    gap: 20px;
 }
 
 .pulsante-donna{
@@ -49,13 +54,27 @@ b{
     margin: auto;
     align-self: center;
     transition: 0.5s;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .immagine-donna{
     margin: 15px;
     border-radius: 20px;
     transition: 0.5s;
+    height: 500px;
+    width: 281.25px;
+    opacity: 0;
 }
+
+.immagine-donna-blurred{
+    position: absolute;
+    margin: 15px;
+    border-radius: 20px;
+    height: 500px;
+    width: 281.25px;
+}
+
 
 .pulsante-donna:hover{
     background-color: red;
@@ -63,8 +82,21 @@ b{
 
 .pulsante-donna:hover .immagine-donna{
     box-shadow: 0 0 20px rgb(0, 0, 0);
+    opacity: 1;
+}
+
+.pulsante-donna:hover .immagine-donna-blurred{
+    opacity: 0;
+    transition: 0.5s;
 }
 
 .titolo-donna{
     align-self: center;
+    font-size: 30px;
+}
+
+@media screen and (max-width: 1382px){
+    .griglia-pulsanti{
+        flex-direction: column;
+    }
 }

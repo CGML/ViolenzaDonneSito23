@@ -7,3 +7,6 @@ Prima:
 
 Dopo:
 ![image](https://github.com/CGML/ViolenzaDonneSito23/assets/46085583/1fdd5b4f-0ea6-415c-9b77-a7bcd9eab21b)
+
+Giorno 02/12/2023
+Correzione errori grammaticali e di fluidità del testo
